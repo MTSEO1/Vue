@@ -1,24 +1,19 @@
-# project
+# Project Study Vue
 
-## Project setup
-```
-npm install
-```
+## What Did I Learned in This Project?
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Vue Install, Settings
+- Vue's structure about Framwork
+- Router
+  -webpackPrefetch
+- Data Binding
+  - 단방향
+  - 양방향
+    - v-model
+  - String
+  - Html
+  - Input
+    - number
+    - string
+- Vue.json
+  -Set User Snippets
