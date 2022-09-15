@@ -1,6 +1,6 @@
 # Project Study Vue
 
-## What Did I Learned in This Project?
+## What Did I Learn in This Project?
 
 - Vue Install, Settings
 - Vue's structure about Framwork
@@ -10,10 +10,14 @@
   - 단방향
   - 양방향
     - v-model
+    - key
   - String
   - Html
   - Input
     - number
     - string
 - Vue.json
-  -Set User Snippets
+  - Set User Snippets
+- Event
+  - Click
+  - Change
