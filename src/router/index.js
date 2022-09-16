@@ -111,6 +111,14 @@ const routes = [
       import(
         /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventChangeView.vue'
       )
+  },
+  {
+    path: '/event/key',
+    name: 'EventKeyView',
+    component: () =>
+      import(
+        /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
+      )
   }
 ]
 
