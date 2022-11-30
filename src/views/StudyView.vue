@@ -36,6 +36,9 @@
     <router-link to="/databinding/style">Style</router-link>
   </div>
   <div>
+    <router-link to="/databinding/button">Button</router-link>
+  </div>
+  <div>
     <h3>Event</h3>
   </div>
   <div>
