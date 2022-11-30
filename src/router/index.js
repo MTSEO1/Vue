@@ -114,6 +114,14 @@ const routes = [
       )
   },
   {
+    path: '/databinding/img',
+    name: 'DataBindingImgView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingImgView.vue'
+      )
+  },
+  {
     path: '/event/click',
     name: 'EventClickView',
     component: () =>
