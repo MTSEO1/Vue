@@ -3,6 +3,9 @@
     <button @click="increaseCounter">Add 1</button>
     <p>{{ counter }}</p>
   </div>
+  <div>
+    <router-link to="/study">Back</router-link>
+  </div>
 </template>
 <script>
 export default {

@@ -21,3 +21,4 @@
 - Event
   - Click
   - Change
+  - Key

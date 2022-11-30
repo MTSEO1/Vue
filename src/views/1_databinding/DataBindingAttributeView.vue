@@ -8,6 +8,9 @@
     <input type="search" name="" id="" v-model="txt1" />
     <button :disabled="txt1 === ''">조회</button>
   </div>
+  <div>
+    <router-link to="/study">Back</router-link>
+  </div>
 </template>
 <script>
 export default {

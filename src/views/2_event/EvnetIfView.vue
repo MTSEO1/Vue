@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <div>{{ htmlString }}</div>
-    <div v-html="htmlString"></div>
-  </div>
+  <div></div>
   <div>
     <router-link to="/study">Back</router-link>
   </div>
@@ -12,7 +9,7 @@ export default {
   components: {},
   data() {
     return {
-      htmlString: '<p style="color:red;">빨간색 문자</p>'
+      sampleData: ''
     }
   },
   setup() {},

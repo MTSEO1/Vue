@@ -11,6 +11,9 @@
       <button @click="doSearch">조회</button>
     </div>
   </div>
+  <div>
+    <router-link to="/study">Back</router-link>
+  </div>
 </template>
 <script>
 export default {

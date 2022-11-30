@@ -12,6 +12,9 @@
     <input type="text" v-model.number="num4" /> =
     <span>{{ num3 + num4 }}</span>
   </div>
+  <div>
+    <router-link to="/study">Back</router-link>
+  </div>
 </template>
 <script>
 export default {

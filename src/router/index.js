@@ -17,6 +17,15 @@ const routes = [
       import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
+    path: '/study',
+    name: 'study',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "study" */ '../views/StudyView.vue')
+  },
+  {
     path: '/databinding/string',
     name: 'DataBindingStringView',
     component: () =>
@@ -118,6 +127,14 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
+      )
+  },
+  {
+    path: '/event/if',
+    name: 'EventIfView',
+    component: () =>
+      import(
+        /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EvnetIfView.vue'
       )
   }
 ]

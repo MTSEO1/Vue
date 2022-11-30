@@ -32,6 +32,9 @@
     </div>
     <div>선택한 지역: {{ favoriteLang }}</div>
   </div>
+  <div>
+    <router-link to="/study">Back</router-link>
+  </div>
 </template>
 <script>
 export default {

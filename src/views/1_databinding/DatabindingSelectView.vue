@@ -7,6 +7,9 @@
       <option value="053">대구</option>
     </select>
   </div>
+  <div>
+    <router-link to="/study">Back</router-link>
+  </div>
 </template>
 <script>
 export default {
