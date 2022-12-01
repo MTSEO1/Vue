@@ -57,7 +57,7 @@
     <router-link to="/event/key">Key</router-link>
   </div>
   <div>
-    <router-link to="/event/if">If</router-link>
+    <router-link to="/event/click">Click</router-link>
   </div>
 </template>
 <script>

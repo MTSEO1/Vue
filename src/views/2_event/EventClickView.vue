@@ -4,6 +4,9 @@
     <p>{{ counter }}</p>
   </div>
   <div>
+    <button type="button" @click="one(), two()">Click</button>
+  </div>
+  <div>
     <router-link to="/study">Back</router-link>
   </div>
 </template>
@@ -22,6 +25,12 @@ export default {
   methods: {
     increaseCounter() {
       this.counter += 1
+    },
+    one() {
+      alert('One')
+    },
+    two() {
+      alert('Two')
     }
   }
 }
