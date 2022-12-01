@@ -130,6 +130,14 @@ const routes = [
       )
   },
   {
+    path: '/databinding/if',
+    name: 'DataBindingIfView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingIfView.vue'
+      )
+  },
+  {
     path: '/event/click',
     name: 'EventClickView',
     component: () =>
@@ -151,14 +159,6 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
-      )
-  },
-  {
-    path: '/event/if',
-    name: 'EventIfView',
-    component: () =>
-      import(
-        /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EvnetIfView.vue'
       )
   }
 ]
