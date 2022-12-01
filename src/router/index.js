@@ -122,6 +122,14 @@ const routes = [
       )
   },
   {
+    path: '/databinding/for',
+    name: 'DataBindingForView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingForView.vue'
+      )
+  },
+  {
     path: '/event/click',
     name: 'EventClickView',
     component: () =>

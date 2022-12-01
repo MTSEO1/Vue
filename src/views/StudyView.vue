@@ -42,6 +42,9 @@
     <router-link to="/databinding/img">Image</router-link>
   </div>
   <div>
+    <router-link to="/databinding/for">For</router-link>
+  </div>
+  <div>
     <h3>Event</h3>
   </div>
   <div>
