@@ -29,7 +29,9 @@ export default {
   unmounted() {},
   methods: {
     doSearch() {
-      console.log(this.searchTxt)
+      if (this.searchTxt === '') {
+        alert('검색어를 입력해주세요.')
+      } else alert(this.searchTxt)
     }
   }
 }
