@@ -160,6 +160,22 @@ const routes = [
       import(
         /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
       )
+  },
+  {
+    path: '/others/computed',
+    name: 'computed',
+    component: () =>
+      import(
+        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/computedView.vue'
+      )
+  },
+  {
+    path: '/others/watch',
+    name: 'watch',
+    component: () =>
+      import(
+        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/watchView.vue'
+      )
   }
 ]
 
