@@ -16,6 +16,10 @@
   - Input
     - number
     - string
+  - If
+  - v-for
+  - binding Image
+  - class
 - Vue.json
   - Set User Snippets
 - Event

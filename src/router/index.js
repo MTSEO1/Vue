@@ -166,7 +166,7 @@ const routes = [
     name: 'computed',
     component: () =>
       import(
-        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/computedView.vue'
+        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/ComputedView.vue'
       )
   },
   {
@@ -174,7 +174,7 @@ const routes = [
     name: 'watch',
     component: () =>
       import(
-        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/watchView.vue'
+        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/WatchView.vue'
       )
   }
 ]
