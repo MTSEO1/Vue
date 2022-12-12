@@ -138,6 +138,14 @@ const routes = [
       )
   },
   {
+    path: '/databinding/props',
+    name: 'DataBindingPropsView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingPropsView.vue'
+      )
+  },
+  {
     path: '/event/click',
     name: 'EventClickView',
     component: () =>

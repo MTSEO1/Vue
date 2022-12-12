@@ -48,6 +48,9 @@
     <router-link to="/databinding/if">If</router-link>
   </div>
   <div>
+    <router-link to="/databinding/props">Props</router-link>
+  </div>
+  <div>
     <h3>Event</h3>
   </div>
   <div>
