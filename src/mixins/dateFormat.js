@@ -1,4 +1,9 @@
 export const dateFormat = {
+  data() {
+    return {
+      sayMixin: '나는 믹스인입니다.'
+    }
+  },
   methods: {
     getDateAndTime(date) {
       if (date !== null) {
