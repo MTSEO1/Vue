@@ -51,6 +51,9 @@
     <router-link to="/databinding/props">Props</router-link>
   </div>
   <div>
+    <router-link to="/others/mixins">Mixins</router-link>
+  </div>
+  <div>
     <h3>Event</h3>
   </div>
   <div>
