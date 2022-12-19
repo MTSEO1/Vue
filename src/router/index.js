@@ -26,6 +26,15 @@ const routes = [
       import(/* webpackChunkName: "study" */ '../views/StudyView.vue')
   },
   {
+    path: '/user',
+    name: 'user',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "study" */ '../views/UserPageView.vue')
+  },
+  {
     path: '/databinding/string',
     name: 'DataBindingStringView',
     component: () =>

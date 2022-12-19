@@ -1,7 +1,7 @@
 <template>
   <div>
     <h5>User Detail</h5>
-    <p>{{ dateFormat }}</p>
+    <p>{{ dateFormat() }}</p>
   </div>
 </template>
 <script>
