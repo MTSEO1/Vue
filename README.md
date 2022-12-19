@@ -26,3 +26,6 @@
   - Click
   - Change
   - Key
+- Components
+  - Props
+- Mixins
