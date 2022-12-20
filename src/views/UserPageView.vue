@@ -1,5 +1,5 @@
 <template>
-  <div class="frame">
+  <div class="container">
     <div id="all-user">
       <h1>All Users</h1>
       <AllUsers />
@@ -30,8 +30,8 @@ export default {
   methods: {}
 }
 </script>
-<style scope>
-.frame {
+<style scoped>
+.container {
   display: flex;
   justify-content: center;
 }

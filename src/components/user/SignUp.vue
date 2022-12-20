@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="input-form">
       <input type="text" placeholder="아이디" />
       <input type="password" placeholder="비밀번호" />
@@ -25,7 +25,7 @@ export default {
   methods: {}
 }
 </script>
-<style scope>
+<style scoped>
 .input-form {
   display: flex;
   flex-direction: column;

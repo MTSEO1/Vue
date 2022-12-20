@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div class="user-tap" v-for="user in users" :key="user">
-      <div>
-        <h4>{{ user.name }}</h4>
-      </div>
+    <div class="container" v-for="user in users" :key="user">
+      <h4>{{ user.name }}</h4>
       <p>id: {{ user.id + 1 }} / {{ user.city }} 거주</p>
     </div>
   </div>
@@ -15,9 +13,9 @@ export default {
   data() {
     return {
       users: [
-        { id: 0, name: 'Tim', city: 'Seoul' },
-        { id: 1, name: 'Jake', city: 'Seoul' },
-        { id: 2, name: 'Harry', city: 'Daegu' }
+        { id: 0, name: 'Tim', city: 'Seoul', password: 123 },
+        { id: 1, name: 'Jake', city: 'Seoul', password: 456 },
+        { id: 2, name: 'Harry', city: 'Daegu', password: 789 }
       ]
     }
   },
@@ -28,4 +26,9 @@ export default {
   methods: {}
 }
 </script>
-<style scope></style>
+<style scoped>
+h4,
+p {
+  margin: 0;
+}
+</style>
