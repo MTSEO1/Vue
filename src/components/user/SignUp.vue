@@ -10,6 +10,7 @@
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
 // import { mapMutations } from 'vuex'
 export default {
   name: 'SignUp',
@@ -28,6 +29,7 @@ export default {
   unmounted() {},
   methods: {
     // ...mapMutations(['addUsers']),
+    ...mapActions(['addUsers']),
     signUp() {
       const userObj = {
         userId: this.userId,
@@ -35,8 +37,9 @@ export default {
         name: this.name,
         city: this.city
       }
-      this.$store.commit('addUsers', userObj)
-      // this.addUsers(userObj)
+      // this.$store.commit('addUsers', userObj)
+      // this.$store.dispatch('addUsers', userObj)
+      this.addUsers(userObj)
       this.clearForm()
     },
     clearForm() {

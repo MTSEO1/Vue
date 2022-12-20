@@ -24,11 +24,18 @@ export default createStore({
       return ((getters.countOfSeoul / getters.allUsersCount) * 100).toFixed(1)
     }
   },
+  // mutations는 동기적
   mutations: {
-    addUsers(state, payload) {
+    addUsers: (state, payload) => {
       state.allUsers.push(payload)
     }
   },
-  actions: {},
+  actions: {
+    addUsers: ({ commit }, payload) => {
+      // context, payload
+      // {commit}, payload
+      commit('addUsers', payload)
+    }
+  },
   modules: {}
 })
