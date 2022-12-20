@@ -24,7 +24,11 @@ export default createStore({
       return ((getters.countOfSeoul / getters.allUsersCount) * 100).toFixed(1)
     }
   },
-  mutations: {},
+  mutations: {
+    addUsers(state, payload) {
+      state.allUsers.push(payload)
+    }
+  },
   actions: {},
   modules: {}
 })

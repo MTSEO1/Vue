@@ -1,15 +1,16 @@
 <template>
   <div class="container">
     <div class="input-form">
-      <input type="text" placeholder="아이디" />
-      <input type="password" placeholder="비밀번호" />
-      <input type="text" placeholder="이름" />
-      <input type="text" placeholder="도시" />
-      <input type="button" value="가입하기" />
+      <input type="text" v-model="userId" placeholder="아이디" />
+      <input type="password" v-model="password" placeholder="비밀번호" />
+      <input type="text" v-model="name" placeholder="이름" />
+      <input type="text" v-model="city" placeholder="도시" />
+      <input type="button" @click="signUp" value="가입하기" />
     </div>
   </div>
 </template>
 <script>
+// import { mapMutations } from 'vuex'
 export default {
   name: 'SignUp',
   components: {},
@@ -26,21 +27,24 @@ export default {
   mounted() {},
   unmounted() {},
   methods: {
-    // signUp() {
-    //   let userObj = {
-    //     userId: this.userId,
-    //     password: this.password,
-    //     name: this.name,
-    //     city: this.city
-    //   }
-    //   this.clearForm()
-    // },
-    // clearForm() {
-    //   ;(this.userId = null),
-    //     (this.password = null),
-    //     (this.name = null),
-    //     (this.city = null)
-    // }
+    // ...mapMutations(['addUsers']),
+    signUp() {
+      const userObj = {
+        userId: this.userId,
+        password: this.password,
+        name: this.name,
+        city: this.city
+      }
+      this.$store.commit('addUsers', userObj)
+      // this.addUsers(userObj)
+      this.clearForm()
+    },
+    clearForm() {
+      this.userId = null
+      this.password = null
+      this.name = null
+      this.city = null
+    }
   }
 }
 </script>
