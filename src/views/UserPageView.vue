@@ -14,7 +14,7 @@
 <script>
 import AllUsers from '@/components/user/AllUsers.vue'
 import SignUp from '@/components/user/SignUp.vue'
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex' // $store.getters 줄이기 위해
 
 export default {
   components: {
