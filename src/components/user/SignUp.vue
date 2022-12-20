@@ -15,14 +15,33 @@ export default {
   components: {},
   data() {
     return {
-      sampleData: ''
+      userId: null,
+      password: null,
+      name: null,
+      city: null
     }
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+    // signUp() {
+    //   let userObj = {
+    //     userId: this.userId,
+    //     password: this.password,
+    //     name: this.name,
+    //     city: this.city
+    //   }
+    //   this.clearForm()
+    // },
+    // clearForm() {
+    //   ;(this.userId = null),
+    //     (this.password = null),
+    //     (this.name = null),
+    //     (this.city = null)
+    // }
+  }
 }
 </script>
 <style scoped>

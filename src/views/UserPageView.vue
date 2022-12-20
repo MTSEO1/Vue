@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div id="all-user">
-      <h1>All Users</h1>
+      <h1>All Users({{ allUsersCount }})</h1>
+      <h3>Seoul Users: {{ countOfSeoul }}({{ percentOfSeoul }}%)</h3>
       <AllUsers />
     </div>
     <div id="sign-up">
@@ -13,6 +14,8 @@
 <script>
 import AllUsers from '@/components/user/AllUsers.vue'
 import SignUp from '@/components/user/SignUp.vue'
+import { mapGetters } from 'vuex'
+
 export default {
   components: {
     AllUsers,
@@ -22,6 +25,9 @@ export default {
     return {
       sampleData: ''
     }
+  },
+  computed: {
+    ...mapGetters(['allUsersCount', 'countOfSeoul', 'percentOfSeoul'])
   },
   setup() {},
   created() {},

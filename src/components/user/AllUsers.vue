@@ -1,8 +1,12 @@
 <template>
   <div>
-    <div class="container" v-for="user in users" :key="user">
+    <div
+      class="container"
+      v-for="(user, index) in $store.state.allUsers"
+      :key="index"
+    >
       <h4>{{ user.name }}</h4>
-      <p>id: {{ user.id + 1 }} / {{ user.city }} 거주</p>
+      <p>id: {{ index }} / {{ user.city }} 거주</p>
     </div>
   </div>
 </template>
@@ -11,17 +15,15 @@ export default {
   name: 'AllUsers',
   components: {},
   data() {
-    return {
-      users: [
-        { id: 0, name: 'Tim', city: 'Seoul', password: 123 },
-        { id: 1, name: 'Jake', city: 'Seoul', password: 456 },
-        { id: 2, name: 'Harry', city: 'Daegu', password: 789 }
-      ]
-    }
+    return {}
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    // EventBus.$on('signUp', users) => {
+    //   this.$store.state.allUsers.push(users)
+    // }
+  },
   unmounted() {},
   methods: {}
 }
