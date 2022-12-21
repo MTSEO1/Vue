@@ -179,22 +179,6 @@ const routes = [
       )
   },
   {
-    path: '/others/computed',
-    name: 'Computed',
-    component: () =>
-      import(
-        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/ComputedView.vue'
-      )
-  },
-  {
-    path: '/others/watch',
-    name: 'Watch',
-    component: () =>
-      import(
-        /* webpackChunkName: "others", webpackPrefetch:true */ '../views/3_others/WatchView.vue'
-      )
-  },
-  {
     path: '/others/mixins',
     name: 'Mixins',
     component: () =>
